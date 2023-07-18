@@ -4,6 +4,7 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 from keras.models import load_model
 import streamlit as st
+from sklearn.preprocessing import MinMaxScaler
 
 st.title("Stock Trend Prediction")
 
@@ -34,7 +35,7 @@ data_training = pd.DataFrame(df1['Close'][0:int(len(df1)*0.70)])
 data_testing = pd.DataFrame(df1['Close'][int(len(df1)*0.70):int(len(df1))])
 
 
-from sklearn.preprocessing import MinMaxScaler
+
 scaler = MinMaxScaler(feature_range=(0,1))
 
 data_training_array= scaler.fit_transform(data_training)
