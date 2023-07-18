@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import yfinance as yf
 import matplotlib.pyplot as plt
-from keras.model import load_model
+from keras.models import load_model
 import streamlit as st
 
 st.title("Stock Trend Prediction")
