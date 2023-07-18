@@ -5,4 +5,4 @@ pandas
 matplotlib
 tensorflow
 sklearn
-from sklearn.preprocessing import MinMaxScaler
+MinMaxScaler
